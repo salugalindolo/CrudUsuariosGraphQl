@@ -1,7 +1,5 @@
-// Importación del módulo gql de apollo-server-express para definir esquemas GraphQL
 const { gql } = require('apollo-server-express');
 
-// Definición del esquema GraphQL
 const typeDefs = gql`
   # Definición del tipo User con sus campos
   type User {
@@ -31,6 +29,4 @@ const typeDefs = gql`
     deleteUser(id: ID!): User
   }
 `;
-
-// Exportación del esquema para ser utilizado en otros módulos
 module.exports = typeDefs;
